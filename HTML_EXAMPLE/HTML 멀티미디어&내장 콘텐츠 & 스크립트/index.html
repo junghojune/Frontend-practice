@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./image/heropy.png" alt="heropy">
+
+    <img
+  srcset="image/heropy_small.png 400w,
+            image/heropy_medium.png 700w,
+            image/heropy_large.png 1000w"
+        sizes="(min-width: 1000px) 700px"
+        src="./image/heropy.png"
+        alt="HEROPY" />
+    <p>우리 페이지야</p>
+    <div>
+    <img src="./image/heropy.png" alt="HEROPY">
+    </div>
+    <div>
+    <iframe src="https://naver.com" frameborder="0"></iframe>
+    </div>
+        <img
+        srcset="image/heropy_small.png 1x,
+                image/heropy_medium.png 1.75x,
+                image/heropy_large.png 2.5x"
+        src="image/heropy.png"
+        alt="HEROPY" />
+
+        <audio src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+        controls
+        autoplay
+        loop
+        muted></audio>
+
+        <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" controls
+        autoplay
+        loop
+        muted
+        poster="./image/heropy.png"></video>
+
+    <figure>
+        <img src="./image/heropy.png" alt="HEROPY">
+        <figcaption>헤로피 이미지 입니다.</figcaption>
+    </figure>
+
+    <canvas id="canvas" width="200" height="150"></canvas>
+    <script>
+        
+        function draw(){
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext){
+          var ctx = canvas.getContext('2d');
+        }
+      }
+    </script>
+</body>
+</html>
